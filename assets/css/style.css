@@ -1,0 +1,155 @@
+/************* GENERAL *************/
+body {
+    background: #333;
+    color: #FFF;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    word-wrap: break-word;
+}
+
+.layout {
+    max-width: 1200px;
+    margin: auto;
+}
+
+@font-face {
+    font-family: 'depraved';
+    src: url('../fonts/depraved.ttf') format('truetype');
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+/************* HEADER *************/
+
+nav {
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    border-bottom: 2px solid #CCC;
+    margin-bottom: 15px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    transition: 500ms;
+}
+
+.logo:hover {
+    opacity: 0.8;
+}
+
+.logo p {
+    /* Pour écrire à la vertical */
+    /* writing-mode: vertical-rl;
+    text-orientation: upright; */
+    font-family: 'depraved', Verdana, Geneva, Tahoma, sans-serif;
+    color: #FFF;
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav .links {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .links a {
+    font-size: 1em;
+    color: #FFF;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav .links a:hover,
+nav .links a:focus {
+    background-color: #EEE;
+    color: #333;
+}
+
+/*********** BANNER ************/
+
+.banner {
+    display: flex;
+    margin: auto;
+    text-align: center;
+}
+
+/************ MAIN *************/
+h1 {
+    font-size: 1.5em;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.products-list {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.products-list a {
+    /* flex-grow: 5; */
+    text-decoration: none;
+    color: #EEE;
+    margin: 20px;
+    transition: 500ms;
+}
+
+.products-list a:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+
+.card {
+    max-width: 208px;
+    background-color: #444;
+    border-bottom: 1px solid #EEE;
+}
+
+.text-card * {
+    margin: 5px;
+    padding: 0px 0px;
+}
+
+/*********** FOOTER ************/
+
+footer p {
+    text-align: center;
+    padding: 15px 0;
+    border-top: 2px solid #CCC;
+}
+
+/************  LOGIN PAGE ************/
+.login {
+    padding: 0px;
+    margin: auto;
+    display: flex;
+    max-width: 900px;
+    background-color: #EEE;
+}
+
+.login>div:nth-child(1) {
+
+    border-right: 1px solid #AAA;
+}
+
+.login div form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    /* border: 1px solid red; */
+}

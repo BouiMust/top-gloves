@@ -1,0 +1,1 @@
+document.querySelector('footer').innerHTML = '<p>Copyright &copy; Top Gloves 2022. All Rights Reserved.</p>';

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./assets/images/favicon/favicon.ico">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Top Gloves</title>
+</head>
+
+<body>
+    <div class="layout">
+        <!-- HEADER -->
+        <header>
+            <script src="./assets/js/header.js"></script>
+        </header>
+        <!-- END HEADER -->
+
+        <!-- MAIN -->
+        <main>
+            <article style="display: flex;justify-content: center;color:#333; background: #EEE;padding: 10px 0;">
+
+                <!-- PICTURE ITEM -->
+                <div style="border: 1px solid #AAA;">
+                    <img src="./products/glove-01.webp" alt="Photo gants noirs" width="400px" height="100%">
+                </div>
+
+                <!-- TEXT ITEM -->
+                <div style="margin-left: 20px;">
+
+                    <!-- TITLE -->
+                    <h1 id="title-item"
+                        style="margin: 0;padding-bottom: 10px;border-bottom: 1px solid #AAA;text-align: start;">
+                        <!-- Nom du produit -->Gants noirs et gris
+                    </h1>
+
+                    <!-- DESCRIPTION -->
+                    <div>
+                        <p><u>Description</u> : </p>
+                        <p id="description-item"><!-- Description -->Gants noirs classiques. Matière : cotton.</p>
+                    </div>
+
+                    <!-- PRICE -->
+                    <p><u>Prix</u> : <span id="price-item"><!-- 42 --></span>15 €</p>
+
+                    <!-- SIZE -->
+                    <div style="margin-top: 50px;">
+                        <label for="size-select">Taille : </label>
+                        <select class="pointer" style="padding: 10px;" name="size-select" id="size">
+                            <option value="">Sélectionnez une taille</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <!-- <option value="vert">vert</option>
+                            <option value="blanc">blanc</option> -->
+                        </select>
+                    </div>
+
+                    <!-- QUANTITY -->
+                    <div style="margin-top: 10px;">
+                        <label for="quantity">Quantité :</label>
+                        <input class="pointer" style="padding: 10px;" type="number" name="quantity" min="1" max="100"
+                            value="0" id="quantity">
+                    </div>
+
+                    <!-- VALIDATE BUTTON -->
+                    <button class="pointer" id="addToCart" style="width: 100%;padding: 10px;margin: 20px 0;">AJOUTER AU
+                        PANIER</button>
+                </div>
+            </article>
+        </main>
+        <!-- END MAIN -->
+
+        <!-- FOOTER -->
+        <footer>
+            <script src="./assets/js/footer.js"></script>
+        </footer>
+        <!-- END FOOTER -->
+
+    </div>
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
